@@ -1,0 +1,32 @@
+{
+  "samplePrompts": {
+    "shouldTrigger": [
+      "How do I install cogutil?",
+      "Help me configure the OpenCog logger",
+      "What threading utilities does cogutil provide?",
+      "How do I build OpenCog from source?",
+      "Show me cogutil configuration examples"
+    ],
+    "shouldNotTrigger": [
+      "What is the weather today?",
+      "Help me deploy to Azure",
+      "Write a poem about clouds",
+      "How do I use AWS Lambda?",
+      "Explain Kubernetes networking"
+    ]
+  },
+  "sampleInput": {
+    "description": "Sample cogutil configuration input"
+  },
+  "expectedOutput": {
+    "description": "Expected cogutil build output"
+  },
+  "mcpResponses": {
+    "file_operations": {
+      "description": "Mock response for file operations"
+    },
+    "terminal": {
+      "description": "Mock response for terminal commands"
+    }
+  }
+}
