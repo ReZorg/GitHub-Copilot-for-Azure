@@ -228,7 +228,10 @@ az vm disk attach \
 ### Configure RocksDB Backend
 
 ```bash
-# On the VM: Format and mount disk
+# On the VM: Identify the new disk (look for disk without partitions)
+lsblk
+
+# Format and mount disk (replace /dev/sdc with actual device name from lsblk)
 sudo mkfs.ext4 /dev/sdc
 sudo mkdir -p /data/atomspace
 sudo mount /dev/sdc /data/atomspace
