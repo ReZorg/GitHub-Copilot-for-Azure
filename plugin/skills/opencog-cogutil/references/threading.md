@@ -60,8 +60,8 @@ for (auto& f : futures) {
 
 ```cpp
 // Get hardware thread count
-unsigned int threads = std::thread::hardware_concurrency();
-ThreadPool pool(threads);
+unsigned int thread_count = std::thread::hardware_concurrency();
+ThreadPool pool(thread_count);
 ```
 
 ## Concurrent Queue
